@@ -1,0 +1,62 @@
+{
+    "name": "Source Dark",
+    "description": "- السورس اخر اصدار .",
+    "logo": "https://te.legra.ph/file/08cec0a2a844713e1624a.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "Fallen",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "- اكتب ايبي ايدي .",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "- اكتب ايبي هاش .",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "- اكتب توكن البوت",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "- اكتب ايدي المالك .",
+        "value": "5587153836",
+        "required": true
+      },
+      "SESSION": {
+        "description": "- كود بايروجرام .",
+        "value": "",
+        "required": true
+      },
+      "SUDO_USERS": {
+        "description": "- ايدي المطور .",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT_CHAT": {
+        "description": "- قناة المطور .",
+        "value": "https://t.me/BBSI8",
+        "required": false
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
